@@ -1,0 +1,1 @@
+# A Magento 2 Theme inspired on Venera

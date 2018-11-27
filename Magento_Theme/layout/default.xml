@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<!-- Start header updates -->
+		<referenceBlock name="logo">
+			<arguments>
+				<argument name="logo_img_width" xsi:type="number">148</argument>
+				<argument name="logo_img_height" xsi:type="number">43</argument>
+			</arguments>
+		</referenceBlock>
+		<referenceBlock name="header">
+	    <arguments>
+	      <argument name="show_part" xsi:type="string">other</argument>
+	    </arguments>
+		</referenceBlock>
+		<referenceContainer name="header-wrapper">
+			<block class="Magento\Theme\Block\Html\Topmenu" name="header.catalog.topnav" template="Magento_Theme::html/topmenu.phtml" ttl="3600" after="logo"/>
+			<block class="Magento\Customer\Block\Account\Navigation" name="header.top.links" after="header.catalog.topnav">
+				<arguments>
+          <argument name="css_class" xsi:type="string">header links</argument>
+        </arguments>
+				<block class="Magento\Customer\Block\Account\RegisterLink" name="header-register-link">
+          <arguments>
+            <argument name="label" xsi:type="string" translate="true">Create an Account</argument>
+          </arguments>
+	      </block>
+	      <block class="Magento\Customer\Block\Account\AuthorizationLink" name="header-authorization-link" template="Magento_Customer::account/link/authorization.phtml" />
+			</block>
+		</referenceContainer>
+		<referenceBlock name="wish-list-link" remove="true" />
+		<referenceBlock name="my-account-link" remove="true" />
+		<referenceBlock name="report.bugs" remove="true" />
+		<referenceBlock name="advanced-search-link" remove="true" />
+		<referenceBlock name="catalog.compare.link" remove="true" />
+		<!-- End header updates -->
+	</body>
+</page>

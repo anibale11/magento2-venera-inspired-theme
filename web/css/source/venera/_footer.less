@@ -1,0 +1,53 @@
+/** Common */
+& when (@media-common = true) {
+
+	.page-footer {
+		background-color: #92a298;
+		border-top: 10px solid #7c8f83;
+
+		.footer {
+
+			&.content {
+				border-top: none;
+				margin-top: 0;
+
+				.links {
+					list-style: square;
+					padding: 0 50px 0 20px;
+
+					li {
+						color: @footer-links-color;
+
+						a {
+							color: @footer-links-color;
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.copyright {
+		background-color: @copyright-background;
+		border-top: 2px solid @copyright-border;
+		color: @copyright-color;
+		font-size: 15px;
+		padding: 20px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.action {
+
+		&.primary {
+			background-color: @action-primary-background;
+			border-color: @action-primary-border;
+
+			&:hover {
+				background-color: @action-primary-hover;
+				border-color: @action-primary-hover-b;
+			}
+		}
+	}
+}

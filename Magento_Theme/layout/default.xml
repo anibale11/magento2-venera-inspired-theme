@@ -33,5 +33,8 @@
 		<referenceBlock name="advanced-search-link" remove="true" />
 		<referenceBlock name="catalog.compare.link" remove="true" />
 		<!-- End header updates -->
+		<!-- Start footer updates -->
+		<move element="copyright" destination="before.body.end"/>
+		<!-- End footer updates -->
 	</body>
 </page>

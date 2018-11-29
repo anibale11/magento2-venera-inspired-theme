@@ -1,11 +1,31 @@
+/** Common */
 & when (@media-common = true) {
 
 	/** General */
 	body {
+		background-color: #ebede3;
 		color: @font-color;
 		font-family: 'Oswald', Helvetica, Arial, sans-serif;
 		font-size: 15px;
 		font-weight: 300;
 		line-height: 20px;
+	}
+}
+
+/** Mobile */
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+	/** General */
+	body {
+		padding-top: 58px;
+	}
+}
+
+/** Desktop */
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+	/** General */
+	body {
+		padding-top: 77px;
 	}
 }

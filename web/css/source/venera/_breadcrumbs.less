@@ -67,6 +67,13 @@
 			&:not(:first-child):not(:last-child) {
 				display: none;
 			}
+
+			&:last-child {
+				max-width: 100px;
+  			text-overflow: ellipsis;
+  			overflow: hidden;
+				white-space: nowrap;
+			}
 		}
 	}
 }

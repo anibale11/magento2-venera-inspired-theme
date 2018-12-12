@@ -35,12 +35,12 @@
 		&.filter {
 
 			.filter-title {
-    		border-bottom: 1px solid #d5d9c4;
+    		border-bottom: 1px solid @filter-title-border;
     		margin-bottom: 10px;
     		padding-bottom: 5px;
 
 				strong {
-    			color: #7b7972;
+    			color: @filter-title-color;
 					font-weight: 300;
     			font-size: 24px;
     			line-height: 30px;
@@ -50,13 +50,13 @@
 		}
 
 		.block-title {
-			border-bottom: 1px solid #d5d9c4;
+			border-bottom: 1px solid @filter-title-border;
   		margin-bottom: 10px;
   		padding-bottom: 5px;
   		position: relative;
 
   		strong {
-  			color: #7b7972;
+  			color: @filter-title-color;
 				font-weight: 300;
   			font-size: 24px;
   			line-height: 30px;
@@ -66,8 +66,8 @@
 	}
 
 	.block-subtitle {
-		border-bottom: 1px solid #d5d9c4;
-		color: #7b7972;
+		border-bottom: 1px solid @filter-title-border;
+		color: @filter-title-color;
 		font-weight: 300;
 		font-size: 24px;
 		line-height: 30px;
@@ -79,8 +79,8 @@
 	.filter-options {
 
 		.filter-options-title {
-			border-bottom: 1px solid #d5d9c4;
-			color: #7b7972;
+			border-bottom: 1px solid @filter-title-border;
+			color: @filter-title-color;
 			font-weight: 300;
 			font-size: 24px;
 			line-height: 30px;
@@ -94,10 +94,10 @@
 			.item {
 
 		    a {
-		    	background-color: #f2f3ec;
-			    border-left: 5px solid #f8f9f6;
+		    	background-color: @filter-option-background;
+			    border-left: 5px solid @filter-border-left;
 			    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.07);
-			    color: #898c7f;
+			    color: @filter-option-color;
 					display: block;
 			    padding: 9px 10px;
 			    transition-duration: 0.3s;
@@ -134,8 +134,8 @@
 			    -webkit-transition-property: border-width;		
 
 			    &:hover {
-				    background-color: #ffffff;
-				    border-left: 15px solid #40a39f;
+				    background-color: @filter-hover-background;
+				    border-left: 15px solid @filter-hover-border;
 			    	text-decoration: none;
 			    }    
 			  }
@@ -146,10 +146,10 @@
 	.filter-current {
 
 		.filter-label {
-			background-color: #f2f3ec;
-	    border-left: 5px solid #f8f9f6;
+			background-color: @filter-label-background;
+	    border-left: 5px solid @filter-label-border;
 	    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.07);
-	    color: #898c7f;
+	    color: @filter-label-color;
 			display: block;
 	    padding: 9px 10px;
 	    transition-duration: 0.3s;
@@ -187,21 +187,21 @@
 		}
 
 		.filter-value {
+	    background-color: @filter-value-background;
+	    color: @filter-value-color;
 			display: inline-block;
-	    padding: 9px 10px;
 	    font-size: 15px;
 	    font-weight: 400;
 	    line-height: 16px;
-	    color: #ffffff;
+	    padding: 9px 10px;
 	    vertical-align: baseline;
 	    white-space: nowrap;
-	    background-color: #999999;
 		}
 
 		.action {
 
 			&.remove {
-		    color: #c43c35;
+		    color: @filter-remove-color;
 				display: inline-block;
 		    font-size: 15px;
 		    font-weight: 400;
@@ -219,7 +219,7 @@
 		+ .filter-actions {
 
 			a {
-		    color: #c43c35;
+		    color: @filter-remove-color;
 				display: inline-block;
 		    font-size: 15px;
 		    font-weight: 400;
@@ -240,10 +240,10 @@
 		.product-items-names {
 
 			.product-item {
-				background-color: #f2f3ec;
-		    border-left: 5px solid #f8f9f6;
+				background-color: @sidebar-product-background;
+		    border-left: 5px solid @sidebar-product-border;
 		    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.07);
-		    color: #898c7f;
+		    color: @sidebar-product-color;
 				display: block;
 				margin-bottom: 3px;
 		    padding: 9px 10px;
@@ -281,13 +281,13 @@
 		    -webkit-transition-property: border-width;
 
 		    &:hover {
-		    	background-color: #ffffff;
-		    	border-left: 15px solid #c43c35;
+		    	background-color: @sidebar-product-hover-ba;
+		    	border-left: 15px solid @sidebar-product-hover-b;
 
 		    	a {
 
 		    		&:before {
-		    			color: #ffffff;
+		    			color: @sidebar-product-hover-color;
 		    		}
 		    	}
 		    }
@@ -304,9 +304,9 @@
 		.product-items {
 
 			.product-item {
-				background-color: #f2f3ec;
+				background-color: @sidebar-product-background;
 		    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.07);
-		    color: #898c7f;
+		    color: @sidebar-product-color;
 				display: block;
 				margin-bottom: 3px;
 		    padding: 9px 10px;
@@ -344,12 +344,12 @@
 		    -webkit-transition-property: border-width;
 
 		    a {
-		    	color: #898c7f;
+		    	color: @sidebar-product-color;
 
 		    	&:hover {
 
 		    		&:before {
-		    			color: #c43c35;
+		    			color: @sidebar-product-remove;
 		    		}
 		    	}
 		    }
@@ -358,7 +358,7 @@
 		    	background: transparent;
 			    box-shadow: none;
 			    border: none;
-			    color: #38413f;
+			    color: @sidebar-product-price;
 					float: none;
 					padding: 0 0;
 			    -moz-box-shadow: none;
@@ -393,14 +393,14 @@
 			}
 
 			&.compare {
-				background-color: #787c71;
-    		border-color: #787c71;
-    		color: #ffffff;
+				background-color: @compare-button-background;
+    		border-color: @compare-button-border;
+    		color: @compare-button-color;
 
 			 	&:hover {
-			 		background-color: #70746a;
-    			border-color: #70746a; 
-    			color: #ffffff;   			
+			 		background-color: @compare-button-hover-ba;
+    			border-color: @compare-button-hover-b; 
+    			color: @compare-button-hover-color;   			
 			 	}
 			}
 		}
@@ -411,7 +411,7 @@
 				margin: 0;
 
 				> a {
-					color: #898c7f;
+					color: @sidebar-product-color;
 				}
 			}
 		}
@@ -441,7 +441,7 @@
 				&.action {
 
 					&.details {
-						color: #787c71;
+						color: @primary-action-color;
 					}
 				}
 			}
@@ -452,7 +452,7 @@
 			a {
 
 				&.action {
-					color: #c43c35;
+					color: @secondary-action-color;
 				}
 			}
 		}
@@ -465,7 +465,7 @@
 			&:not(.disabled) {
 
 				&:hover {
-					outline: 2px solid #40a39f !important;
+					outline: 2px solid @swatch-option-hover !important;
 				}
 			}
 		}
@@ -475,7 +475,7 @@
 			&:not(.disabled) {
 
 				&:hover {
-					outline: 2px solid #40a39f !important;
+					outline: 2px solid @swatch-option-hover !important;
 				}
 			}
 		}
@@ -483,11 +483,11 @@
 
 	// Product listing
 	.modes {
-		background-color: #ffffff;
-    box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
+		background-color: @modes-background;
+    box-shadow: 0px 1px 4px 1px @modes-first-shadow, 2px 2px 1px 0px @modes-second-shadow inset;
 		list-style: none;
-    -moz-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
-    -webkit-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
+    -moz-box-shadow: 0px 1px 4px 1px @modes-first-shadow, 2px 2px 1px 0px @modes-second-shadow inset;
+    -webkit-box-shadow: 0px 1px 4px 1px @modes-first-shadow, 2px 2px 1px 0px @modes-second-shadow inset;
 	}
 
 	.modes-mode {
@@ -495,14 +495,14 @@
 		&:not(.active) {
 
 			&:hover {
-				background: #40a39f;
-				color: #ffffff;
+				background: @modes-hover-background;
+				color: @modes-hover-color;
 			}
 		}
 	}
 
 	.toolbar-amount {
-		color: #7b7972;
+		color: @toolbar-amount-color;
 	}
 
 	.toolbar-products {
@@ -511,29 +511,29 @@
 	}
 
 	.sorter {
-		color: #7b7972;
+		color: @sorter-color;
 	}
 
 	.sorter-action {
 
 		&:before {
-			color: #7b7972;
+			color: @sorter-before-color;
 		}
 
 		&:hover {
 
 			&:before {
-				color: #40a39f;
+				color: @sorter-hover-before-color;
 			}
 		}
 	}
 
 	.sorter-options {
-		background-color: #ffffff;
-    box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
+		background-color: @sorter-options-background;
+    box-shadow: 0px 1px 4px 1px @sorter-first-shadow, 2px 2px 1px 0px @sorter-second-shadow inset;
 		list-style: none;
-    -moz-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
-    -webkit-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
+    -moz-box-shadow: 0px 1px 4px 1px @sorter-first-shadow, 2px 2px 1px 0px @sorter-second-shadow inset;
+    -webkit-box-shadow: 0px 1px 4px 1px @sorter-first-shadow, 2px 2px 1px 0px @sorter-second-shadow inset;
 	}
 
 	.column {
@@ -558,7 +558,7 @@
 			~ .toolbar {
 
 				.limiter {
-					color: #7b7972;
+					color: @limiter-color;
 					padding: 10px 0;
 				}
 			}
@@ -568,19 +568,19 @@
 	.products-grid {
 
 		.product-item {
-	    background-color: #f8f9f4;
-	    background-image: linear-gradient(#f8f9f4, #fdfdfb);
-	    background-image: -moz-linear-gradient(#f8f9f4, #fdfdfb);
-	    background-image: -ms-linear-gradient(#f8f9f4, #fdfdfb);
-	    background-image: -o-linear-gradient(#f8f9f4, #fdfdfb);
-	    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f9f4), color-stop(100%, #fdfdfb));
-	    background-image: -webkit-linear-gradient(#f8f9f4, #fdfdfb);
-	    box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px white inset;
+	    background-color: @product-item-background;
+	    background-image: linear-gradient(@product-item-first-image, @product-item-second-image);
+	    background-image: -moz-linear-gradient(@product-item-first-image, @product-item-second-image);
+	    background-image: -ms-linear-gradient(@product-item-first-image, @product-item-second-image);
+	    background-image: -o-linear-gradient(@product-item-first-image, @product-item-second-image);
+	    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, @product-item-first-image), color-stop(100%, @product-item-second-image));
+	    background-image: -webkit-linear-gradient(@product-item-first-image, @product-item-second-image);
+	    box-shadow: 0px 1px 4px 1px @product-item-first-shadow, 2px 2px 1px 0px @product-item-second-shadow inset;
 	    margin-bottom: 20px;
 			padding: 10px;
 	    width: 100%;
-	    -moz-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px white inset;
-	    -webkit-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px white inset;
+	    -moz-box-shadow: 0px 1px 4px 1px @product-item-first-shadow, 2px 2px 1px 0px @product-item-second-shadow inset;
+	    -webkit-box-shadow: 0px 1px 4px 1px @product-item-first-shadow, 2px 2px 1px 0px @product-item-second-shadow inset;
 		}
 	}
 
@@ -592,8 +592,8 @@
 	}
 
 	.product-item-name {
-    border-bottom: 1px solid #dfe1d6;
-    box-shadow: 0px 1px 0px 0px white;
+    border-bottom: 1px solid @product-name-border;
+    box-shadow: 0px 1px 0px 0px @product-name-shadow;
 		display: table;
 		font-size: 20px;
     line-height: 24px;
@@ -601,8 +601,8 @@
 		min-height: 48px;
     padding-bottom: 10px;
     padding-top: 5px;
-    -moz-box-shadow: 0px 1px 0px 0px white;
-    -webkit-box-shadow: 0px 1px 0px 0px white;
+    -moz-box-shadow: 0px 1px 0px 0px @product-name-shadow;
+    -webkit-box-shadow: 0px 1px 0px 0px @product-name-shadow;
 		width: 100%;
 
 		a {
@@ -614,11 +614,11 @@
 	.product-item {
 
 		.price-box {
-	    background: #e2f1ed;
-	    box-shadow: inset 1px 1px 1px 0px white;
-	    border: 1px solid #d0e1dd;
+	    background: @product-price-background;
+	    box-shadow: inset 1px 1px 1px 0px @product-price-shadow;
+	    border: 1px solid @product-price-border;
 	    border-radius: 3px;
-	    color: #38413f;
+	    color: @product-price-box-color;
 			float: right;
 			margin: 0 0 10px;
 			padding: 1px 10px;
@@ -639,7 +639,7 @@
 			}
 
 			.price {
-				color: #6d7b78;
+				color: @product-price-color;
 		    font-size: 12px;
 		    font-weight: 300;
 				text-transform: uppercase;
@@ -658,7 +658,7 @@
 		.reviews-actions {
 
 			a {
-				color: #6d7b78;
+				color: @reviews-summary-color;
 		    font-size: 12px;
 				text-transform: uppercase;
 			}
@@ -670,43 +670,15 @@
 		.rating-result {
 
 			&:before {
-				color: #d0e1dd;
+				color: @reviews-stars-color;
 			}
 
 			> span {
 
 				&:before {
-					color: #40a39f;
+					color: @reviews-stars-before-color;
 				}
 			}
-		}
-	}
-
-	.product-item-description {
-		margin: 15px 0;
-
-		p {
-			color: #4f4e4c;
-			font-family: 'Abel', 'Helvetica', 'Arial', sans-serif;
-    	font-size: 16px;
-    	line-height: 20px;
-		}
-
-		a {
-	    background-color: #787c71;
-	    background-image: linear-gradient(to bottom, #7d8176, #70746a);
-	    background-image: -moz-linear-gradient(top, #7d8176, #70746a);
-	    background-image: -o-linear-gradient(top, #7d8176, #70746a);
-	    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7d8176), to(#70746a));
-	    background-image: -webkit-linear-gradient(top, #7d8176, #70746a);
-	    background-repeat: repeat-x;
-	    border-color: #70746a #70746a #494c45;
-	    border-radius: 4px;
-			color: #ffffff;
-			float: right;
-	    font-size: 16px;
-	    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-	    padding: 4px 12px;
 		}
 	}
 
@@ -729,14 +701,14 @@
 	.pages {
 
 		.items {
-	    background-color: #f8f9f4;
-	    box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
+	    background-color: @product-items-background;
+	    box-shadow: 0px 1px 4px 1px @product-items-first-shadow, 2px 2px 1px 0px @product-items-second-shadow inset;
 			display: inline-block;
 			font-weight: 300;
 	    margin-bottom: 0;
 	    margin-left: 0;
-	    -webkit-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
-	    -moz-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
+	    -webkit-box-shadow: 0px 1px 4px 1px @product-items-first-shadow, 2px 2px 1px 0px @product-items-second-shadow inset;
+	    -moz-box-shadow: 0px 1px 4px 1px @product-items-first-shadow, 2px 2px 1px 0px @product-items-second-shadow inset;
 		}
 
 		.item {
@@ -749,8 +721,16 @@
 				strong {
 
 					&.page {
-						background-color: #fdfdfb;
-						color: #999999;
+						background-color: @page-current-background;
+						border-right: 1px solid @page-current-border;
+		    		box-shadow: 2px 2px 1px 0px @page-current-shadow inset;
+						color: @page-current-color;
+						font-size: 15px;
+				    line-height: 20px;
+						padding: 10px 20px;
+				    text-decoration: none;
+				    -moz-box-shadow: 2px 2px 1px 0px @page-current-shadow inset;
+				    -webkit-box-shadow: 2px 2px 1px 0px @page-current-shadow inset;
 					}
 				}
 			}
@@ -759,40 +739,24 @@
 		a {
 
 			&.page {
-		    background-color: #f8f9f4;
-		    border-right: 1px solid #e3e7d3;
-		    box-shadow: 2px 2px 1px 0px #ffffff inset;
-		    color: #514D3E;
+		    background-color: @page-background;
+		    border-right: 1px solid @page-border;
+		    box-shadow: 2px 2px 1px 0px @page-shadow inset;
+		    color: @page-color;
 		    line-height: 20px;
 				padding: 10px 20px;
 		    text-decoration: none;
-		    -moz-box-shadow: 2px 2px 1px 0px #ffffff inset;
-		    -webkit-box-shadow: 2px 2px 1px 0px #ffffff inset;
+		    -moz-box-shadow: 2px 2px 1px 0px @page-shadow inset;
+		    -webkit-box-shadow: 2px 2px 1px 0px @page-shadow inset;
 
 		    &:hover {
-		    	background-color: #fdfdfb;
-		    	color: #514D3E;
+		    	background-color: @page-hover-background;
+		    	color: @page-hover-color;
 		    }
 
 		    &:visited {
-		    	color: #514D3E;
+		    	color: @page-visited-color;
 		    }
-			}
-		}
-
-		strong {
-
-			&.page {
-				background-color: #f8f9f4;
-		    border-right: 1px solid #e3e7d3;
-		    box-shadow: 2px 2px 1px 0px #ffffff inset;
-		    color: #514D3E;
-		    font-size: 15px;
-		    line-height: 20px;
-				padding: 10px 20px;
-		    text-decoration: none;
-		    -moz-box-shadow: 2px 2px 1px 0px #ffffff inset;
-		    -webkit-box-shadow: 2px 2px 1px 0px #ffffff inset;
 			}
 		}
 
@@ -802,7 +766,7 @@
 			padding: 10px 20px;
 
 			&:hover {
-				background-color: #fdfdfb;
+				background-color: @page-action-hover-ba;
 			}
 
 			&.previous {
@@ -816,11 +780,11 @@
 	}
 
 	.limiter-options {
-		background-color: #ffffff;
-    box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
+		background-color: @limiter-background;
+    box-shadow: 0px 1px 4px 1px @limiter-first-shadow, 2px 2px 1px 0px @limiter-second-shadow inset;
     list-style: none;
-    -moz-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
-    -webkit-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px #ffffff inset;
+    -moz-box-shadow: 0px 1px 4px 1px @limiter-first-shadow, 2px 2px 1px 0px @limiter-second-shadow inset;
+    -webkit-box-shadow: 0px 1px 4px 1px @limiter-first-shadow, 2px 2px 1px 0px @limiter-second-shadow inset;
 	}
 }
 
@@ -852,11 +816,11 @@
 		&:not(.active) {
 
 			&:hover {
-				background: #40a39f;
-				color: #ffffff;
+				background: @modes-hover-background;
+				color: @modes-hover-color;
 
 				&:before {
-					color: #ffffff;
+					color: @modes-hover-color;
 				}
 			}
 		}

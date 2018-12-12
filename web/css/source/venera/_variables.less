@@ -1,38 +1,114 @@
 /** Custom break point */
-@screen__al: 1231px;
+@screen__al: 									1231px;
 
 /** Colors */
-@font-color: 								#4f4e4c; // Color for letters
-@header-background: 				#e9ece2; // Header background color
-@header-background-light: 	#eef0e8; // Top header background color
-@header-background-dark: 		#e3e6d9; // Bottom header background color
-@header-border:							#f5f6ef; // Header border color
-@active-menu-background:		#dce0cf; // Active menu background color
-@submenu-background:				#7accc9; // Active submenu border color
-@submenu-hover-font-color:	#ffffff; // Submenu hover font color
-@menu-font-color:						#555555; // Menu font color
-@text-shadow-color:					#eff1e8; // Text shadow color
-@menu-arrow-border-before:	#cccccc; // Border color for menu arrow
-@menu-arrow-border-after:		#ffffff; // Border color for menu arrow
-@sign-in-background:				#f1f3ea; // Sig in background color
-@sign-in-font-color:				#60635b; // Sig in font color
-@links-hover-background: 		#7accc9; // Header links hover background
-@links-hover-color:					#ffffff; // Header links hover color
-@create-account-background:	#40a39f; // Header create account link background
-@links-default-color:				#575757; // Header links default Magento color
-@submenu-border-color:			#d1d1d1; // Submenu default Magento border color
-@copyright-background:			#6c7065; // Copyright background color
-@copyright-border:					#5a5e54; // Copyright border color
-@copyright-color:						#cccccc; // Copyright font color
-@footer-links-color:				#ffffff; // Footer links font color
-@action-primary-background: #787c71; // Action primary background color
-@action-primary-border:			#787c71; // Action primary border color
-@action-primary-hover:			#70746a; // Action primary background hover color
-@action-primary-hover-b:		#70746a; // Action primary border hover color
-@breadcrumbs-background:		#ffffff; // Breadcrumbs list color background
-@breadcrumbs-boxshadow:			#b4b6a9; // Breadcrumbs first box-shadow color
-@breadcrumbs-color:					#514D3E; // Breadcrumbs list color
-@active-breadcrumb-color:		#8f8a79; // Active breadcrumb color
-@page-title-color:					#3d3b36; // Page title color
-@page-title-border:					#e3e4dd; // Page title border color
-@page-title-box-shadow:			#c2c4bb; // Page title box shadow color
+@font-color: 									#4f4e4c; // Color for letters
+@header-background: 					#e9ece2; // Header background color
+@header-background-light: 		#eef0e8; // Top header background color
+@header-background-dark: 			#e3e6d9; // Bottom header background color
+@header-border:								#f5f6ef; // Header border color
+@active-menu-background:			#dce0cf; // Active menu background color
+@submenu-background:					#7accc9; // Active submenu border color
+@submenu-hover-font-color:		#ffffff; // Submenu hover font color
+@menu-font-color:							#555555; // Menu font color
+@text-shadow-color:						#eff1e8; // Text shadow color
+@menu-arrow-border-before:		#cccccc; // Border color for menu arrow
+@menu-arrow-border-after:			#ffffff; // Border color for menu arrow
+@sign-in-background:					#f1f3ea; // Sig in background color
+@sign-in-font-color:					#60635b; // Sig in font color
+@links-hover-background: 			#7accc9; // Header links hover background
+@links-hover-color:						#ffffff; // Header links hover color
+@create-account-background:		#40a39f; // Header create account link background
+@links-default-color:					#575757; // Header links default Magento color
+@submenu-border-color:				#d1d1d1; // Submenu default Magento border color
+@copyright-background:				#6c7065; // Copyright background color
+@copyright-border:						#5a5e54; // Copyright border color
+@copyright-color:							#cccccc; // Copyright font color
+@footer-links-color:					#ffffff; // Footer links font color
+@action-primary-background: 	#787c71; // Action primary background color
+@action-primary-border:				#787c71; // Action primary border color
+@action-primary-hover:				#70746a; // Action primary background hover color
+@action-primary-hover-b:			#70746a; // Action primary border hover color
+@breadcrumbs-background:			#ffffff; // Breadcrumbs list color background
+@breadcrumbs-boxshadow:				#b4b6a9; // Breadcrumbs first box-shadow color
+@breadcrumbs-color:						#514D3E; // Breadcrumbs list color
+@active-breadcrumb-color:			#8f8a79; // Active breadcrumb color
+@page-title-color:						#3d3b36; // Page title color
+@page-title-border:						#e3e4dd; // Page title border color
+@page-title-box-shadow:				#c2c4bb; // Page title box shadow color
+@filter-title-border:					#d5d9c4; // Border color for filter titles
+@filter-title-color:					#7b7972; // Font color for filter titles
+@filter-option-background:		#f2f3ec; // Background color for filter options 
+@filter-border-left:					#f8f9f6; // Border left color for filter options
+@filter-option-color:					#898c7f; // Font color for filter options
+@filter-hover-background:   	#ffffff; // Background color for filter options in hover
+@filter-hover-border:					#40a39f; // Border color for filter options in hover
+@filter-label-background:			#f2f3ec; // Background color for current filter
+@filter-label-border:					#f8f9f6; // Border color for current filter
+@filter-label-color:					#898c7f; // Font color for current filter
+@filter-value-background:   	#999999; // Background color for current filter value
+@filter-value-color:					#ffffff; // Font color for current filter value
+@filter-remove-color:					#c43c35; // Font color for filter remove action
+@sidebar-product-background:	#f2f3ec; // Background color for products in sidebar
+@sidebar-product-border:			#f8f9f6; // Border color for products in sidebar
+@sidebar-product-color:				#898c7f; // Font color for producst in sidebar
+@sidebar-product-hover-ba:		#ffffff; // Background color for products in sidebar on hover
+@sidebar-product-hover-b:			#c43c35; // Border color for products in sidebar on hover
+@sidebar-product-hover-color: #ffffff; // Font color for products in sidebar on hover
+@sidebar-product-remove:			#c43c35; // Font color for remove products in sidebar
+@sidebar-product-price:				#38413f; // Font color for product pirce in sidebar
+@compare-button-background:		#787c71; // Background color for compare button
+@compare-button-border:				#787c71; // Border color for compare button
+@compare-button-color:				#ffffff; // Font color for compare button
+@compare-button-hover-ba:			#70746a; // Background color for compare button on hover
+@compare-button-hover-b:			#70746a; // Border color for compare button on hover
+@compare-button-hover-color:	#ffffff; // Font color for compare button on hover
+@primary-action-color:				#787c71; // Font color for primary action 
+@secondary-action-color: 			#c43c35; // Font color for secondary action
+@swatch-option-hover: 				#40a39f; // Outline color for swatches option
+@modes-background:						#ffffff; // Background color for modes
+@modes-first-shadow:					#b4b6a9; // First shadow color for modes
+@modes-second-shadow:					#ffffff; // Second shadow color for modes
+@modes-hover-background:			#40a39f; // Background color for modes on hover
+@modes-hover-color:						#ffffff; // Font color for modes on hover
+@toolbar-amount-color:				#7b7972; // Font color for toolbar amount
+@sorter-color: 					 			#7b7972; // Font color for sorter
+@sorter-before-color:					#7b7972; // Font color for sorter before element
+@sorter-hover-before-color:   #40a39f; // Font color for sorter before element on hover
+@sorter-options-background:		#ffffff; // Background color for sorter options
+@sorter-first-shadow:					#b4b6a9; // First shadow color for sorter
+@sorter-second-shadow:				#ffffff; // Second shadow color for sorter
+@limiter-color:								#7b7972; // Font color for limiter
+@product-item-background:			#f8f9f4; // Background color for product items
+@product-item-first-image:		#f8f9f4; // First image gradient color for product item
+@product-item-second-image: 	#fdfdfb; // Second image gradient color for product item
+@product-item-first-shadow:		#b4b6a9; // First shadow color for product item
+@product-item-second-shadow:  #ffffff; // Second shadow color for product item
+@product-name-border:					#dfe1d6; // Border color for product name
+@product-name-shadow:					#ffffff; // Shadow color for product name
+@product-price-background:		#e2f1ed; // Background color for product price box
+@product-price-shadow:				#ffffff; // Shadow color for product price box
+@product-price-border:				#d0e1dd; // Border color for product price box
+@product-price-box-color:			#38413f; // Font color for product price box
+@product-price-color:					#6d7b78; // Font color for product price
+@reviews-summary-color:				#6d7b78; // Font color for reviews summary
+@reviews-stars-color:					#d0e1dd; // Font color for default rating result
+@reviews-stars-before-color:  #40a39f; // Font color for rating result percentage
+@product-items-background:		#f8f9f4; // Background color for product items
+@product-items-first-shadow:  #b4b6a9; // First shadow color for product items
+@product-items-second-shadow: #ffffff; // Second shadow color for product items
+@page-current-background:			#fdfdfb; // Background color for current page
+@page-current-border:					#e3e7d3; // Border color for current page
+@page-current-shadow:					#ffffff; // Shadow color for current page
+@page-current-color:					#999999; // Font color for current page
+@page-background:							#f8f9f4; // Background color for pages
+@page-border:									#e3e7d3; // Border color for pages
+@page-shadow:									#ffffff; // Shadow color for pages
+@page-color:									#514D3E; // Font color for pages
+@page-hover-background:				#fdfdfb; // Background color for pages on hover
+@page-hover-color:						#514D3E; // Font color for pages on hover
+@page-visited-color:					#514D3E; // Font color for visited pages
+@page-action-hover-ba:				#fdfdfb; // Background color for page action hover
+@limiter-background:					#ffffff; // Background color for limiter
+@limiter-first-shadow:				#b4b6a9; // First shadow color for limiter
+@limiter-second-shadow:				#ffffff; // Second shadow color for limiter

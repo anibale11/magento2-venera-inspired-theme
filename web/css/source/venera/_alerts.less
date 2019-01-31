@@ -1,0 +1,95 @@
+/** Common */
+& when (@media-common = true) {
+
+	.message {
+		padding: 15px 35px 12px 20px;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fcf8e3;
+    color: #c09853;
+    -webkit-box-shadow: 3px 3px 0px 0px #f7ecb5;
+    -moz-box-shadow: 3px 3px 0px 0px #f7ecb5;
+    box-shadow: 3px 3px 0px 0px #f7ecb5;
+    font-size: 16px;
+
+		&.success {
+			margin: 0 0 20px;
+			background-color: #dff0d8;
+	    border-color: #d6e9c6;
+	    color: #468847;
+	    -webkit-box-shadow: 3px 3px 0px 0px #c1e2b3;
+	    -moz-box-shadow: 3px 3px 0px 0px #c1e2b3;
+	    box-shadow: 3px 3px 0px 0px #c1e2b3;
+
+	    > *:first-child {
+
+	    	&:before {
+	    		color: #468847;
+	    	}
+	    }
+
+	    a {
+	    	color: #787c71;
+	    }
+		}
+
+		&.error {
+			margin: 0 0 20px;
+			background-color: #f2dede;
+    	border-color: #eed3d7;
+	    color: #b94a48;
+	    -webkit-box-shadow: 3px 3px 0px 0px #e4b9b9;
+	    -moz-box-shadow: 3px 3px 0px 0px #e4b9b9;
+	    box-shadow: 3px 3px 0px 0px #e4b9b9;
+
+	    > *:first-child {
+
+	    	&:before {
+	    		color: #eed3d7;
+	    	}
+	    }
+
+	    a {
+	    	color: #787c71;
+	    }
+		}
+
+		&.warning {
+			margin: 0 0 20px;
+	    background-color: #fcf8e3;
+	    color: #c09853;
+
+	    > *:first-child {
+
+	    	&:before {
+	    		color: #c09853;
+	    	}
+	    }
+
+	    a {
+	    	color: #787c71;
+	    }
+		}
+
+		&.info {
+			margin: 0 0 20px;
+			background-color: #d9edf7;
+	    border-color: #bce8f1;
+	    color: #3a87ad;
+	    -webkit-box-shadow: 3px 3px 0px 0px #afd9ee;
+	    -moz-box-shadow: 3px 3px 0px 0px #afd9ee;
+	    box-shadow: 3px 3px 0px 0px #afd9ee;
+
+	    > *:first-child {
+
+	    	&:before {
+	    		color: #3a87ad;
+	    	}
+	    }
+
+	    a {
+	    	color: #787c71;
+	    }
+		}
+	}
+}

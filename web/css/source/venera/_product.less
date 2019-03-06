@@ -30,7 +30,7 @@
 	} 
 
 	.fotorama__dot {
-		border: 1px solid #40a39f !important;
+		border: 1px solid @product-dots-border !important;
 		height: 10px !important;
 		width: 10px !important;
 	}
@@ -38,20 +38,20 @@
 	.fotorama__active {
 
 		.fotorama__dot {
-			background-color: #40a39f !important;
+			background-color: @product-dots-background !important;
 		}
 	}
 
 	.fotorama__stage {
-		background-color: #ffffff;
-    box-shadow: 0px 1px 4px 1px #b4b6a9;
+		background-color: @product-background;
+    box-shadow: 0px 1px 4px 1px @product-box-shadow;
     margin-bottom: 10px;
-    -moz-box-shadow: 0px 1px 4px 1px #b4b6a9;
-    -webkit-box-shadow: 0px 1px 4px 1px #b4b6a9;
+    -moz-box-shadow: 0px 1px 4px 1px @product-box-shadow;
+    -webkit-box-shadow: 0px 1px 4px 1px @product-box-shadow;
 	}
 
 	.fotorama__thumb-border {
-		border: 1px solid #40a39f !important;
+		border: 1px solid @product-thumb-border !important;
 	}
 
 	.fotorama__img {
@@ -75,18 +75,18 @@
 	}
 
 	.product-info-main {
-    background-color: #f8f9f4;
-    background-image: linear-gradient(#f8f9f4, #fdfdfb);
-    background-image: -ms-linear-gradient(#f8f9f4, #fdfdfb);
-    background-image: -moz-linear-gradient(#f8f9f4, #fdfdfb);
-    background-image: -o-linear-gradient(#f8f9f4, #fdfdfb);
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f9f4), color-stop(100%, #fdfdfb));
-    background-image: -webkit-linear-gradient(#f8f9f4, #fdfdfb);
-    box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px white inset;
+    background-color: @product-info-main-base-bg;
+    background-image: linear-gradient(@product-info-main-base-bg, @product-info-main-alter-bg);
+    background-image: -ms-linear-gradient(@product-info-main-base-bg, @product-info-main-alter-bg);
+    background-image: -moz-linear-gradient(@product-info-main-base-bg, @product-info-main-alter-bg);
+    background-image: -o-linear-gradient(@product-info-main-base-bg, @product-info-main-alter-bg);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, @product-info-main-base-bg), color-stop(100%, @product-info-main-alter-bg));
+    background-image: -webkit-linear-gradient(@product-info-main-base-bg, @product-info-main-alter-bg);
+    box-shadow: 0px 1px 4px 1px @product-info-main-shadow, 2px 2px 1px 0px white inset;
     margin-bottom: 20px;
     text-align: center;
-    -moz-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px white inset;
-    -webkit-box-shadow: 0px 1px 4px 1px #b4b6a9, 2px 2px 1px 0px white inset;
+    -moz-box-shadow: 0px 1px 4px 1px @product-info-main-shadow, 2px 2px 1px 0px white inset;
+    -webkit-box-shadow: 0px 1px 4px 1px @product-info-main-shadow, 2px 2px 1px 0px white inset;
 
     .product-info-price {
     	padding: 20px 20px 0 20px;
